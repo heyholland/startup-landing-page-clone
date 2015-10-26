@@ -1,6 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
     background-color: LightGray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+
 }
 div {
     border: 1px solid Chocolate;
+}
+a {
+  text-decoration: none;
+  color: #838994;
+}
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+/* Navigation Section */
+.top-navigation {
+  background-color: #fff;
+}
+.top-navigation .logo {
+  margin-left: 2.3rem;
+  margin-top: 0.7rem;
+}
+.top-navigation .content {
+  height: 70px;
+  padding: 0px 15px;
+}
+.top-navigation .links {
+    float: right;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li a:hover {
+    cursor: pointer;
+    color: #333333;
+}
+/* Introduction Section */
+.introduction {
+    background-image: url('../images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+}
+.introduction .content {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+.introduction h1 {
+    margin-top: 12.5rem;
+    font-size: 3.125rem;
+    font-weight: 300;
+
+}
+.introduction h3 {
+    margin-top: -1.25rem;
+    font-size: 1.563rem;
+    font-weight: 300;
+
+}
+.introduction button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+.introduction button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
 }
